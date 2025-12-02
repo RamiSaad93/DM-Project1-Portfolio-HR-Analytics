@@ -23,19 +23,19 @@ When it comes to the distribution of employees across departments, the data is v
 
 With that in mind: 
 
-   Hypothesis 1; we can theorise that larger departments will have to take up more training due workload related factors. 
+   		Hypothesis 1; we can theorise that larger departments will have to take up more training due workload related factors. 
 
-   Hypothesis 2: Meeting KPI targets might be easier for larger departments 
+   		Hypothesis 2: Meeting KPI targets might be easier for larger departments 
 
-   Hypothesis 3: there is a correlation between larger departments and awards
+   		Hypothesis 3: there is a correlation between larger departments and awards
 
 Most people hold a bachelor's degree or higher, it would be interesting to see if education levels contribute to rating and training scores, as well KPI goals being met.
 
-	  Hypothesis 4: education is directly tied to the scores and KPI goals
+	  	Hypothesis 4: education is directly tied to the scores and KPI goals
 
 There is a higher number of male hired as opposed to females, it would be important to have a look at how the female scores and KPI performances defer from those of men: 
 
-	  Hypothesis 5: there is a gap in the scoring, and awarding of females
+	  	Hypothesis 5: there is a gap in the scoring, and awarding of females
 
 The project will also analyse how the skewed regional distribution plays a role in the overall metrical measures of performance, and how the different hiring channels contribute (if at all) to overall performance. 
 
