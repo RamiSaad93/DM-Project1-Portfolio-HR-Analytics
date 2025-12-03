@@ -141,11 +141,11 @@ to make use of the class, the following steps have to be take:
 # plt.show()
 
 # Percentage distribution
-dept_counts = df["department"].value_counts(normalize=True) * 100
-dept_counts.plot(kind="bar")
-plt.ylabel("Percentage")
-plt.title("Department Distribution (%)")
-plt.show()
+# dept_counts = df["department"].value_counts(normalize=True) * 100
+# dept_counts.plot(kind="bar")
+# plt.ylabel("Percentage")
+# plt.title("Department Distribution (%)")
+# plt.show()
 
 
 
@@ -154,10 +154,10 @@ taking average training score as an example, a simple
 view on distribution of numerical data can be made
 """
 
-sns.histplot(df["avg_training_score"], bins=20, kde=True)
-plt.title("Distribution of Average Training Score")
-plt.xlabel("Avg Training Score")
-plt.show()
+# sns.histplot(df["avg_training_score"], bins=20, kde=True)
+# plt.title("Distribution of Average Training Score")
+# plt.xlabel("Avg Training Score")
+# plt.show()
 
 
 
