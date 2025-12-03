@@ -167,10 +167,10 @@ in identifying outliers,
 
 the following boxplot can help us identify those
 """
-sns.boxplot(x="department", y="avg_training_score", data=df)
-plt.xticks(rotation=45)
-plt.title("Training Score by Department")
-plt.show()
+# sns.boxplot(x="department", y="avg_training_score", data=df)
+# plt.xticks(rotation=45)
+# plt.title("Training Score by Department")
+# plt.show()
 
 
 
@@ -183,15 +183,15 @@ logical to view to drive exploratory questions.
 
 """
 
-numeric_cols = ["no_of_trainings",
-        "age",
-        "previous_year_rating",
-        "length_of_service",
-        "KPIs_met_more_than_80",
-        "awards_won",
-        "avg_training_score"]
-corr = df[numeric_cols].corr()
+# numeric_cols = ["no_of_trainings",
+#         "age",
+#         "previous_year_rating",
+#         "length_of_service",
+#         "KPIs_met_more_than_80",
+#         "awards_won",
+#         "avg_training_score"]
+# corr = df[numeric_cols].corr()
 
-sns.heatmap(corr, annot=True, cmap="coolwarm")
-plt.title("Correlation Between Numeric Variables")
-plt.show()
+# sns.heatmap(corr, annot=True, cmap="coolwarm")
+# plt.title("Correlation Between Numeric Variables")
+# plt.show()
