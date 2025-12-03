@@ -17,22 +17,22 @@ a quick review of the dataset can be conducted as follows to make
 sure everthing is as expected and everything was uploaded correctly 
 without any errors
 """
-df.head(10) #view first 10 rows
+# df.head(10) #view first 10 rows
 
-df.tail(5) #view of last 5 rows
+# df.tail(5) #view of last 5 rows
 
-df.shape #shape of the data
+# df.shape #shape of the data
 
-df.columns #list of all coulmns 
+# df.columns #list of all coulmns 
 
-df.dtypes #get data types of all columns 
+# df.dtypes #get data types of all columns 
 
-df.info() # an overall summery of the above steps, also lets you know the count of non_null values and memory usage
+# df.info() # an overall summery of the above steps, also lets you know the count of non_null values and memory usage
 
-df.isnull().sum().sort_values(ascending= False) #have a summary of misisng values 
-df.isnull().mean().sort_values(ascending= False) * 100 #missing values as % breakdown
-df.nunique().sort_values(ascending=False) #count of unique values 
-df.duplicated() #look for duplicated rolls as they my inflate aspects like mean
+# df.isnull().sum().sort_values(ascending= False) #have a summary of misisng values 
+# df.isnull().mean().sort_values(ascending= False) * 100 #missing values as % breakdown
+# df.nunique().sort_values(ascending=False) #count of unique values 
+# df.duplicated() #look for duplicated rolls as they my inflate aspects like mean
 
 """
 once a general check of loaded data is done
@@ -92,53 +92,53 @@ summarised is the next step in the process
 to make use of the class, the following steps have to be take:
 """
 
-eda = HREDA(df) # drawing from the class methods 
+# eda = HREDA(df) # drawing from the class methods 
 
-eda.numeric_summary() # Numericsummary
+# eda.numeric_summary() # Numericsummary
 
-# Distribution stats for a single numeric column
-eda.numeric_distribution_stats("avg_training_score")
+# # Distribution stats for a single numeric column
+# eda.numeric_distribution_stats("avg_training_score")
 
-#summary of numeric columns can be called upon using:
-per_column_stats = {col: eda.numeric_distribution_stats(col) for col in eda.numeric_col}
-per_column_stats
+# #summary of numeric columns can be called upon using:
+# per_column_stats = {col: eda.numeric_distribution_stats(col) for col in eda.numeric_col}
+# per_column_stats
 
-# Categorical summary for one column
-eda.summarise_cat("department")
+# # Categorical summary for one column
+# eda.summarise_cat("department")
 
-# Summarise all categorical columns at once via:
-object_summary = eda.cat_summary()
-object_summary
+# # Summarise all categorical columns at once via:
+# object_summary = eda.cat_summary()
+# object_summary
 
-#or
+# #or
 
-object_summary["department"] # access summary for 'department'
+# object_summary["department"] # access summary for 'department'
 
 
-"""
-there is a need to have a general overview of how the categorical data relates to numerical.
+# """
+# there is a need to have a general overview of how the categorical data relates to numerical.
 
-To have this done in a quick and easy manner, a pivot table can be used to create summarise table:
+# To have this done in a quick and easy manner, a pivot table can be used to create summarise table:
 
-"""
+# """
 
-df_filter = df[df["department"] == "Sales & Marketing"] #was visually practical to view per department as opposed to everything at once
-pivot = df_filter.pivot_table(
-    values=["no_of_trainings","age","previous_year_rating","length_of_service",
-        "KPIs_met_more_than_80","awards_won","avg_training_score"],index=["department", "education", "recruitment_channel","gender"],
-aggfunc="mean")
+# df_filter = df[df["department"] == "Sales & Marketing"] #was visually practical to view per department as opposed to everything at once
+# pivot = df_filter.pivot_table(
+#     values=["no_of_trainings","age","previous_year_rating","length_of_service",
+#         "KPIs_met_more_than_80","awards_won","avg_training_score"],index=["department", "education", "recruitment_channel","gender"],
+# aggfunc="mean")
 
-pivot
+# pivot
 
-"""
-to have a visual representation of the number of employees per department 
-the following graph helps paint a visual representation of that
-"""
+# """
+# to have a visual representation of the number of employees per department 
+# the following graph helps paint a visual representation of that
+# """
 
-sns.countplot(x="department", data=df)
-plt.xticks(rotation=45)
-plt.title("Number of Employees per Department")
-plt.show()
+# sns.countplot(x="department", data=df)
+# plt.xticks(rotation=45)
+# plt.title("Number of Employees per Department")
+# plt.show()
 
 # Percentage distribution
 dept_counts = df["department"].value_counts(normalize=True) * 100
