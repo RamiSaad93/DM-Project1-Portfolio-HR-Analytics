@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 """
 the dataset needs to be loaded as follows
 """
-df = pd.read_csv("https://raw.githubusercontent.com/Dee-M123/DM-Project-Portfolio/refs/heads/main/Project1/HR%20Analytics/Data/Uncleaned_employees_final_dataset%20(1).csv")
+#df = pd.read_csv("https://raw.githubusercontent.com/Dee-M123/DM-Project-Portfolio/refs/heads/main/Project1/HR%20Analytics/Data/Uncleaned_employees_final_dataset%20(1).csv")
 
 """
 a quick review of the dataset can be conducted as follows to make 
