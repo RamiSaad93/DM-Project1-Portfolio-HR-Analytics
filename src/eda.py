@@ -110,7 +110,9 @@ eda.summarise_cat("department")
 object_summary = eda.cat_summary()
 object_summary
 
-or object_summary["department"] # access summary for 'department'
+#or
+
+object_summary["department"] # access summary for 'department'
 
 
 """
